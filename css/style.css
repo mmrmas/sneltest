@@ -1,0 +1,377 @@
+body {
+  font-size: 4vw;
+}
+@media screen and (min-width: 1200px) {
+  body {
+     font-size: 25px;
+  }
+}
+button{
+  font-size: inherit;
+}
+input{
+    font-size: inherit;
+}
+
+.brand__bg {
+position: absolute;
+margin-top:75px;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+width: 100%;
+height: 15%;
+background-image: linear-gradient(#ff9d2f, #ff6126);
+border-bottom-right-radius: 90% 90%;
+display:flex;
+justify-content: flex-start;
+color: black;
+text-indent: 0%;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: absolute;
+  top:0;
+  left:0;
+  width : 100%;
+  overflow: hidden;
+	border : none;
+  height: 50%;
+}
+
+.topnavbg{
+  position: absolute;
+  top:0;
+  left:0;
+  width : 100%;
+  background-color: #ff9d2f;
+  overflow: hidden;
+  border : none;
+  height:75px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding:  16px;
+  text-decoration: none;
+  border-radius: 10px;
+  border-left:1px solid gold;
+  border-top:1px solid gold;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ff6126;
+  color: white;
+}
+
+.topnav .user{
+	color: #f2f2f2;
+  text-align: center;
+  padding:  16px;
+  text-decoration: none;
+	float:left
+}
+
+.dropdown {
+  float:left;
+	overflow: hidden;
+  border-radius: 10px;
+  border-left:1px solid gold;
+  border-top:1px solid gold;
+}
+
+.dropdown .dropbtn {
+  color: white;
+  padding: 16px;
+  border: none;
+	background-color: inherit;
+	font-family: inherit;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d2e6f1;
+  min-width: 160px;
+  z-index: 99999;
+}
+
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+/*class*/
+
+
+
+
+
+.content{
+  width:90%;
+  margin:0% 5% 0% 5%;
+  position: absolute;
+  top: 25%;
+  z-index:1;
+}
+
+.checkbox_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:90%;
+  margin: 10px;
+}
+
+
+.checkbox_box{
+  flex: 1;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  margin: 10px;
+}
+
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+  width: 40%;
+  border-radius: 5%;
+  background-color:lightgrey;
+  margin:5px;
+  border-left:1px solid gold;
+  border-top:1px solid gold;
+}
+
+.button:active{
+  background-color:grey;
+}
+
+.rightalign{
+  display: flex;
+  justify-content: flex-end;
+  margin-right:10px;
+  margin-bottom: 2px;
+}
+
+.radiobutton{
+    margin: 25px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.fileupload{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+  height: 15%;
+  width: 1%;
+  border-radius:5%;
+  background-color:lightgrey;
+  margin:10px;
+  border-left:1px solid gold;
+  border-top:1px solid gold;
+}
+
+
+.fileupload_cover{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+  height: 5%;
+  width: 30%;
+  border-radius:5%;
+  background-color:lightgrey;
+  margin:5px;
+  border-left:1px solid gold;
+  border-top:1px solid gold;
+}
+
+
+
+.inputfield{
+  margin:10px;
+  display:flex;
+  justify-content: flex-start;
+  height:10vw;
+  width: 70%;
+  border-left:1px solid gold;
+  border-top:1px solid gold;
+}
+
+.uploadimage{
+  min-width:100%;
+  height:auto;
+  margin:5% 25% 5% 25%;
+  border-style: groove;
+}
+
+/* Add Animation */
+@keyframes animatebot {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+.popup{
+  bottom: 0;
+  z-index: 100;
+  position: fixed;
+  width:90%;
+  height:90%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  overflow: auto;
+  border:solid #ED3832 2px;
+  background-color: white;
+  animation-name: animatebot;
+  animation-duration: 0.4s;
+}
+
+.popup_bg{
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  width:100%;
+  height:100%;
+}
+
+.passportimage{
+  width:100%;
+  height:100%;
+  border-style: groove;
+}
+
+.progressArrowBox{
+  margin-top:2%;
+  margin-bottom: 2%;
+  width:70%;
+  display:flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.imageBox{
+  width:50%;
+  display:block;
+  margin-top:10px;
+}
+
+.progressArrow{
+  height:10px;
+  width:10px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+
+
+.wait{
+  z-index: 10;
+  width:60%;
+  margin:100px auto;
+  text-align:center;
+  position: relative;
+  color:gold;
+  /*animation: glowtext .8s linear infinite alternate;*/
+  padding:2px;
+}
+
+@keyframes glowtext {
+    0% {
+       color:#393;
+       /* text-shadow:10px 0px 3px rgba(0,0,0,.8); */
+    }
+
+    50% {
+       color:#6f6;
+       /* text-shadow:0 0px 0px rgba(0,0,0,1); */
+    }
+
+    100% {
+      color:#393;
+      /* text-shadow:-10px 0px 3px rgba(0,0,0,.8); */
+    }
+}
+
+.wait:before{
+  content:"";
+  display: block;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:1px;
+
+  background-color: #0B0B0B;
+  animation: glow .4s linear infinite alternate;
+
+}
+
+@keyframes glow {
+    0% {
+      border-color: #393;
+      box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;}
+    100% {
+      border-color: #6f6;
+      box-shadow: 0 0 15px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;}
+}
+
+.wait:after{
+  content:"";
+  display: block;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:10%;
+  height:3px;
+  background-color:#6f6;
+
+  animation:progress linear .8s infinite /* alternate */ ;
+}
+
+@keyframes progress {
+	0%  {left:0   ;width:0   ;right:100%}
+  50% {left:0   ;width:100%;right:0   }
+  100%{left:100%;width:0   ;right:0   }
+};
